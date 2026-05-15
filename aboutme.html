@@ -1,14 +1,72 @@
-<!-- about.html -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+    color: #5a2a7a;
+}
 
+.about-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.about-card {
+    background: #ffffff;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card h2 {
+    color: #7d3cb5;
+    margin-bottom: 15px;
+}
+
+.about-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+    
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skills span {
+    background: #e8dff0;
+    color: #5a2a7a;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    background: #5a2a7a;
+    color: white;
+}
+</style>
 <body>
     <h1>About Me</h1>
 
