@@ -6,6 +6,63 @@
     <title>About Me</title>
 </head>
 <style>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #e8dff0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #5a2a7a;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #5a2a7a;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #9b59b6;
+}
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+}
+    
 h1 {
     text-align: center;
     margin-top: 40px;
@@ -68,7 +125,18 @@ h1 {
 }
 </style>
 <body>
+    <nav class="navbar">
     <h1>About Me</h1>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul id="nav-links">
+        <li><a href="hero.html">Hero</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+    </nav>
 
     <div class="about-container">
         <div class="about-card">
