@@ -6,48 +6,69 @@
     <title>Hero</title>
 </head>
 <style>
+<style id="lilac-theme">
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background: #f7f3f9;
-    color: #333;
+    background: linear-gradient(135deg, #f8f6fb, #f3eef7);
+    color: #2f2f2f;
 }
 
+/* NAVBAR */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background: #e8dff0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: rgba(232, 223, 240, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(155, 89, 182, 0.1);
 }
 
 nav h1 {
-    font-size: 24px;
-    color: #5a2a7a;
+    font-size: 22px;
+    color: #6b3c8c;
     letter-spacing: 1px;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #5a2a7a;
-    font-weight: bold;
-    transition: 0.3s;
+    color: #6b3c8c;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: #b08bd6;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #9b59b6;
+    color: #8e5bbf;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
 /* HERO SECTION */
@@ -55,63 +76,73 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 80px 60px;
-    gap: 40px;
+    padding: 90px 70px;
+    gap: 50px;
     flex-wrap: wrap;
 }
 
+/* TEXT */
 .hero-text {
     flex: 1;
 }
 
 .hero-text h2 {
-    font-size: 40px;
-    color: #5a2a7a;
+    font-size: 42px;
+    color: #5e2d79;
+    font-weight: 700;
+    letter-spacing: 1px;
     margin-bottom: 10px;
 }
 
 .hero-text h3 {
-    font-size: 20px;
-    color: #7a5a99;
+    font-size: 18px;
+    color: #8b6aa8;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 16px;
-    line-height: 1.6;
-    max-width: 500px;
+    font-size: 15.5px;
+    line-height: 1.8;
+    max-width: 520px;
+    color: #444;
     margin-bottom: 30px;
 }
 
+/* BUTTONS */
 .hero-buttons {
     display: flex;
     gap: 15px;
 }
 
 .btn1, .btn2 {
-    padding: 12px 20px;
+    padding: 12px 22px;
+    border-radius: 30px;
+    font-weight: 600;
     text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: 0.3s;
+    transition: 0.3s ease;
+    font-size: 14px;
 }
 
 .btn1 {
-    background: #5a2a7a;
+    background: linear-gradient(135deg, #7d4aa8, #b08bd6);
     color: white;
+    box-shadow: 0 6px 15px rgba(125, 74, 168, 0.25);
 }
 
 .btn1:hover {
-    background: #7d3cb5;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(125, 74, 168, 0.3);
 }
 
 .btn2 {
-    border: 2px solid #5a2a7a;
-    color: #5a2a7a;
+    border: 2px solid #a47ac2;
+    color: #6b3c8c;
+    background: transparent;
 }
 
 .btn2:hover {
-    background: #5a2a7a;
+    background: #a47ac2;
     color: white;
 }
 
@@ -121,34 +152,41 @@ nav ul li a:hover {
 }
 
 .hero-image img {
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid #e8dff0;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border: 6px solid rgba(176, 139, 214, 0.3);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
 }
 
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
+        padding: 15px 25px;
     }
 
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 50px 20px;
+        padding: 60px 20px;
     }
 
     .hero-text p {
-        margin: 0 auto 30px;
+        margin: 0 auto 25px;
     }
 
     .hero-buttons {
         justify-content: center;
     }
 }
+</style>
 </style>
 <body>
     <nav>
