@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
 
 <style>
 * {
@@ -19,21 +19,21 @@ html, body {
 }
 
 body {
-    background: linear-gradient(135deg, #fbeaff, #eef3ff, #eaf7ff);
-    color: #3a3a3a;
+    background: linear-gradient(135deg, #0f0c1a, #15102a, #0d1425);
+    color: #e9e4f5;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 40px;
-    background: rgba(255, 255, 255, 0.65);
+    padding: 24px 80px;
+    background: rgba(20, 16, 35, 0.75);
     backdrop-filter: blur(14px);
 }
 
 .navbar h1 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     background: linear-gradient(90deg, #ff9ecb, #a88bff, #8fd3ff);
     -webkit-background-clip: text;
@@ -43,19 +43,19 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 22px;
+    gap: 35px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #6f5aa8;
+    color: #cfc3ff;
     font-weight: 600;
 }
 
 h1 {
     text-align: center;
-    margin: 30px 0 10px;
-    font-size: 34px;
+    margin: 60px 0 20px;
+    font-size: 40px;
     background: linear-gradient(90deg, #ff9ecb, #a88bff, #8fd3ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -64,60 +64,54 @@ h1 {
 .about-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
-    padding: 40px 20px;
+    padding: 80px 40px;
 }
 
 .about-card {
-    background: rgba(255,255,255,0.75);
-    width: 300px;
-    padding: 22px;
-    border-radius: 22px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(168,139,255,0.2);
+    padding: 30px;
+    border-radius: 24px;
+    width: 340px;
 }
 
 .about-card h2 {
-    background: linear-gradient(90deg, #ff9ecb, #a88bff, #8fd3ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
 
 .about-card p {
-    font-size: 14.5px;
-    line-height: 1.7;
-    color: #555;
+    line-height: 2;
+    color: #d7d0f2;
 }
 
 .skills {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 12px;
 }
 
 .skills span {
-    background: #f3e8ff;
-    padding: 6px 12px;
+    padding: 8px 14px;
     border-radius: 20px;
-    font-size: 12px;
-    color: #6f5aa8;
-}
-
-.skills span:hover {
-    background: #a88bff;
-    color: white;
 }
 
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
-        gap: 10px;
-        padding: 14px 20px;
+        padding: 20px 25px;
+        gap: 12px;
+    }
+
+    h1 {
+        margin: 40px 0 10px;
     }
 
     .about-container {
-        padding: 30px 15px;
+        padding: 50px 20px;
+        gap: 25px;
     }
 }
 </style>
@@ -141,8 +135,8 @@ h1 {
     <div class="about-card">
         <h2>Who Am I?</h2>
         <p>
-        Hello! I am Jo-Ann D. Blanco, a 2nd Year BSIT student at Cavite State University – Imus Campus.
-        I am passionate about web development and creative digital design.
+            Hello! I am Jo-Ann D. Blanco, a 2nd Year BSIT student at Cavite State University – Imus Campus.
+            I am passionate about web development and creative digital design.
         </p>
     </div>
 
