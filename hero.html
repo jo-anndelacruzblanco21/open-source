@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hero</title>
 </head>
+
 <style>
-<style id="lilac-theme">
 * {
     margin: 0;
     padding: 0;
@@ -15,59 +15,43 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f8f6fb, #f3eef7);
-    color: #2f2f2f;
+    background: linear-gradient(135deg, #fff6fb, #f3f0ff, #f7fbff);
+    color: #3a3a3a;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
-    background: rgba(232, 223, 240, 0.7);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    border-bottom: 1px solid rgba(155, 89, 182, 0.1);
+    padding: 18px 60px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+    border-radius: 0 0 20px 20px;
 }
 
 nav h1 {
     font-size: 22px;
-    color: #6b3c8c;
-    letter-spacing: 1px;
-    font-weight: 600;
+    color: #a06cd5;
+    font-weight: 700;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 22px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #6b3c8c;
-    font-weight: 500;
+    color: #7b5ea7;
+    font-weight: 600;
     position: relative;
-    transition: 0.3s ease;
-}
-
-nav ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0%;
-    height: 2px;
-    background: #b08bd6;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #8e5bbf;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
+    color: #c77dff;
 }
 
 .hero {
@@ -79,31 +63,28 @@ nav ul li a:hover::after {
     flex-wrap: wrap;
 }
 
-/* TEXT */
 .hero-text {
     flex: 1;
 }
 
 .hero-text h2 {
     font-size: 42px;
-    color: #5e2d79;
-    font-weight: 700;
-    letter-spacing: 1px;
+    color: #8e5ebf;
     margin-bottom: 10px;
 }
 
 .hero-text h3 {
     font-size: 18px;
-    color: #8b6aa8;
-    font-weight: 500;
+    color: #a98bc7;
     margin-bottom: 20px;
+    font-weight: 500;
 }
 
 .hero-text p {
     font-size: 15.5px;
     line-height: 1.8;
     max-width: 520px;
-    color: #444;
+    color: #555;
     margin-bottom: 30px;
 }
 
@@ -121,25 +102,25 @@ nav ul li a:hover::after {
     font-size: 14px;
 }
 
+/* PRIMARY BUTTON */
 .btn1 {
-    background: linear-gradient(135deg, #7d4aa8, #b08bd6);
+    background: linear-gradient(135deg, #c77dff, #bdb2ff);
     color: white;
-    box-shadow: 0 6px 15px rgba(125, 74, 168, 0.25);
+    box-shadow: 0 8px 18px rgba(199, 125, 255, 0.3);
 }
 
 .btn1:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(125, 74, 168, 0.3);
 }
 
 .btn2 {
-    border: 2px solid #a47ac2;
-    color: #6b3c8c;
+    border: 2px solid #c77dff;
+    color: #8e5ebf;
     background: transparent;
 }
 
 .btn2:hover {
-    background: #a47ac2;
+    background: #c77dff;
     color: white;
 }
 
@@ -149,24 +130,24 @@ nav ul li a:hover::after {
 }
 
 .hero-image img {
-    width: 290px;
-    height: 290px;
+    width: 280px;
+    height: 280px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid rgba(176, 139, 214, 0.3);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    border: 6px solid #f3e8ff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: 0.3s ease;
 }
 
 .hero-image img:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        gap: 12px;
-        padding: 15px 25px;
+        gap: 10px;
+        padding: 15px 20px;
     }
 
     .hero {
@@ -183,7 +164,6 @@ nav ul li a:hover::after {
         justify-content: center;
     }
 }
-</style>
 </style>
 <body>
     <nav>
@@ -203,9 +183,9 @@ nav ul li a:hover::after {
 
             <h3>2nd Year BSIT Student</h3>
 
-            <p> "Working with a file, every day, little by little, </p>
-            <p> until the orchestra's collective qualities emerge." </p>
-            <p> -James Levine </p>
+            <p> "Working with a file, every day, little by little,
+                until the orchestra's collective qualities emerge." 
+                 -James Levine </p>
             <div class="hero-buttons">
                 <a href="projects.html" class="btn1"> Projects </a>
                 <a href="contact.html" class="btn2"> Contacts </a>
