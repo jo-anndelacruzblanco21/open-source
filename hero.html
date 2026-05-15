@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hero</title>
 
 <style>
 * {
@@ -14,8 +13,13 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-    background: linear-gradient(135deg, #fff6fb, #f3f0ff, #f7fbff);
+    background: linear-gradient(135deg, #fbeaff, #eef3ff, #eaf7ff);
     color: #3a3a3a;
 }
 
@@ -23,17 +27,18 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 60px;
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.05);
-    border-radius: 0 0 20px 20px;
+    padding: 16px 40px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.05);
 }
 
 nav h1 {
-    font-size: 22px;
-    color: #a06cd5;
+    font-size: 20px;
     font-weight: 700;
+    background: linear-gradient(90deg, #ff9ecb, #a88bff, #8fd3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -44,22 +49,20 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #7b5ea7;
+    color: #6f5aa8;
     font-weight: 600;
-    position: relative;
-    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    color: #c77dff;
+    color: #a88bff;
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 90px 70px;
-    gap: 50px;
+    padding: 70px 40px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
@@ -68,29 +71,31 @@ nav ul li a:hover {
 }
 
 .hero-text h2 {
-    font-size: 42px;
-    color: #8e5ebf;
-    margin-bottom: 10px;
+    font-size: 44px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #ff9ecb, #a88bff, #8fd3ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
 }
 
 .hero-text h3 {
     font-size: 18px;
-    color: #a98bc7;
-    margin-bottom: 20px;
-    font-weight: 500;
+    color: #7a6aa8;
+    margin-bottom: 15px;
 }
 
 .hero-text p {
     font-size: 15.5px;
     line-height: 1.8;
-    max-width: 520px;
+    max-width: 500px;
     color: #555;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .btn1, .btn2 {
@@ -98,66 +103,49 @@ nav ul li a:hover {
     border-radius: 30px;
     font-weight: 600;
     text-decoration: none;
-    transition: 0.3s ease;
     font-size: 14px;
 }
 
-/* PRIMARY BUTTON */
 .btn1 {
-    background: linear-gradient(135deg, #c77dff, #bdb2ff);
+    background: linear-gradient(135deg, #ff9ecb, #a88bff, #8fd3ff);
     color: white;
-    box-shadow: 0 8px 18px rgba(199, 125, 255, 0.3);
-}
-
-.btn1:hover {
-    transform: translateY(-2px);
 }
 
 .btn2 {
-    border: 2px solid #c77dff;
-    color: #8e5ebf;
-    background: transparent;
+    border: 2px solid #a88bff;
+    color: #6f5aa8;
 }
 
 .btn2:hover {
-    background: #c77dff;
+    background: #a88bff;
     color: white;
 }
 
 .hero-image {
     flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-image img {
     width: 280px;
     height: 280px;
-    object-fit: cover;
     border-radius: 50%;
-    border: 6px solid #f3e8ff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-}
-
-.hero-image img:hover {
-    transform: scale(1.05);
+    object-fit: cover;
+    border: 6px solid rgba(168, 139, 255, 0.25);
 }
 
 @media (max-width: 768px) {
     nav {
+        padding: 14px 20px;
         flex-direction: column;
         gap: 10px;
-        padding: 15px 20px;
     }
 
     .hero {
-        flex-direction: column;
+        padding: 50px 20px;
         text-align: center;
-        padding: 60px 20px;
-    }
-
-    .hero-text p {
-        margin: 0 auto 25px;
+        justify-content: center;
     }
 
     .hero-buttons {
@@ -165,36 +153,39 @@ nav ul li a:hover {
     }
 }
 </style>
+</head>
+    
 <body>
-    <nav>
-        <h1>Home</h1>
+<nav>
+    <h1>Home</h1>
+    <ul>
+        <li><a href="hero.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+    </ul>
+</nav>
 
-        <ul>
-            <li><a href="hero.html">Home</a></li>
-            <li><a href="aboutme.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
+<section class="hero">
+    <div class="hero-text">
+        <h2>JO-ANN D. BLANCO</h2>
+        <h3>2nd Year BSIT Student</h3>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h2>JO-ANN D. BLANCO</h2>
+        <p>
+        "Working with a file, every day, little by little, until the orchestra's collective qualities emerge."
+        - James Levine
+        </p>
 
-            <h3>2nd Year BSIT Student</h3>
-
-            <p> "Working with a file, every day, little by little,
-                until the orchestra's collective qualities emerge." 
-                 -James Levine </p>
-            <div class="hero-buttons">
-                <a href="projects.html" class="btn1"> Projects </a>
-                <a href="contact.html" class="btn2"> Contacts </a>
-            </div>
+        <div class="hero-buttons">
+            <a href="projects.html" class="btn1">Projects</a>
+            <a href="contacts.html" class="btn2">Contacts</a>
         </div>
+    </div>
 
-        <div class="hero-image">
-            <img src="me.jpg" alt="Profile Picture">
-        </div>
-    </section>
+    <div class="hero-image">
+        <img src="me.jpg" alt="Profile">
+    </div>
+</section>
+
 </body>
 </html>
