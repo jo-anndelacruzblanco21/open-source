@@ -57,7 +57,6 @@ nav ul li a {
     position: relative;
 }
 
-/* NAV HOVER UNDERLINE */
 nav ul li a::after {
     content: "";
     position: absolute;
@@ -112,6 +111,16 @@ section {
     color: #d1d1d1;
     line-height: 1.9;
     margin-bottom: 35px;
+}
+
+/* HERO IMAGE (2x2 ID STYLE) */
+.hero-image img {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #a855f7;
+    box-shadow: 0 0 15px rgba(168,85,247,0.5);
 }
 
 /* BUTTON */
@@ -183,7 +192,6 @@ section {
     border: 1px solid #a855f7;
     padding: 8px 16px;
     border-radius: 20px;
-    transition: 0.3s;
 }
 
 .skills span:hover {
@@ -234,7 +242,7 @@ section {
     margin-bottom: 12px;
 }
 
-/* FIXED LINK */
+/* PROJECT LINK */
 .project-card a {
     display: block;
     width: fit-content;
@@ -242,7 +250,6 @@ section {
     text-decoration: none;
     color: #a855f7;
     font-weight: bold;
-    transition: 0.3s ease;
 }
 
 .project-card a:hover {
@@ -312,14 +319,8 @@ section {
     }
 
     .hero-image img {
-    width: 200px;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 5px solid #a855f7;
-    box-shadow: 0 0 30px rgba(168,85,247,0.6);
-
+        width: 100px;
+        height: 100px;
     }
 
     .about-card,
