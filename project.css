@@ -130,10 +130,6 @@ section {
     transform: translateY(-3px);
 }
 
-.hero-image img:hover {
-    transform: scale(1.05);
-}
-
 /* SECTION TITLE */
 .section-title {
     text-align: center;
