@@ -204,19 +204,19 @@ section {
 }
 
 .project-card img {
-    width: 80%;
-    height: 200px;
+    width: 100%;
+    height: 210px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .project-card p {
     color: #d1d1d1;
     line-height: 1.8;
     margin-bottom: 12px;
-    display: flex;
-    justify-content: center;
 }
 
 .project-card a {
