@@ -24,6 +24,7 @@ body::before {
     z-index: -1;
 }
 
+/* NAVIGATION */
 nav {
     position: fixed;
     top: 0;
@@ -52,6 +53,19 @@ nav ul li a {
     text-decoration: none;
     color: #d6d6d6;
     font-weight: 600;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+/* NAV HOVER UNDERLINE */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #a855f7;
     transition: 0.3s;
 }
 
@@ -59,10 +73,16 @@ nav ul li a:hover {
     color: #a855f7;
 }
 
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* SECTIONS */
 section {
     padding: 120px 8%;
 }
 
+/* HERO */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -94,6 +114,7 @@ section {
     margin-bottom: 35px;
 }
 
+/* BUTTON */
 .btn1 {
     display: inline-block;
     background: #a855f7;
@@ -109,15 +130,22 @@ section {
     transform: translateY(-3px);
 }
 
+/* HERO IMAGE */
 .hero-image img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 20px;
     border: 5px solid #a855f7;
-    box-shadow: 0 0 25px rgba(168,85,247,0.5), 0 0 50px rgba(168,85,247,0.2);
+    box-shadow: 0 0 30px rgba(168,85,247,0.6);
+    transition: 0.4s ease;
 }
 
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* SECTION TITLE */
 .section-title {
     text-align: center;
     font-size: 42px;
@@ -125,6 +153,7 @@ section {
     margin-bottom: 60px;
 }
 
+/* ABOUT */
 .about-container {
     display: flex;
     justify-content: center;
@@ -157,6 +186,7 @@ section {
     line-height: 1.8;
 }
 
+/* SKILLS */
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -175,6 +205,7 @@ section {
     background: #a855f7;
 }
 
+/* PROJECTS */
 .projects-container {
     display: flex;
     justify-content: center;
@@ -205,12 +236,10 @@ section {
 
 .project-card img {
     width: 100%;
-    height: 210px;
+    height: 200px;
     object-fit: cover;
     border-radius: 15px;
     margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 .project-card p {
@@ -219,16 +248,13 @@ section {
     margin-bottom: 12px;
 }
 
+/* FIXED LINK */
 .project-card a {
+    display: inline-block;
     margin-bottom: 15px;
     text-decoration: none;
     color: #a855f7;
     font-weight: bold;
-    transition: 0.3s;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
     transition: 0.3s ease;
 }
 
@@ -236,6 +262,7 @@ section {
     color: white;
 }
 
+/* CONTACT */
 .contact-container {
     display: flex;
     justify-content: center;
@@ -275,6 +302,7 @@ section {
     color: #a855f7;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
 
     nav {
@@ -297,8 +325,8 @@ section {
     }
 
     .hero-image img {
-        width: 240px;
-        height: 240px;
+        width: 150px;
+        height: 190px;
     }
 
     .about-card,
