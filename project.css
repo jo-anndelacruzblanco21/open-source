@@ -251,8 +251,9 @@ section {
 
 /* FIXED LINK */
 .project-card a {
-    display: inline-block;
-    margin-bottom: 15px;
+    display: block;
+    width: fit-content;
+    margin: 0 auto 15px auto;
     text-decoration: none;
     color: #a855f7;
     font-weight: bold;
@@ -326,8 +327,8 @@ section {
     }
 
     .hero-image img {
-        width: 100px;
-        height: 150px;
+        width: 70px;
+        height: 130px;
     }
 
     .about-card,
