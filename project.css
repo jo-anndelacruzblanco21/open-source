@@ -223,7 +223,10 @@ section {
     color: #a855f7;
     font-weight: bold;
     transition: 0.3s;
-    font-family: bold;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.3s ease;
 }
 
 .project-card a:hover {
