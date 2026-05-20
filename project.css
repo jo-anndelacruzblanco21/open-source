@@ -235,11 +235,12 @@ section {
 }
 
 .project-card img {
-    width: 100%;
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 80%;
     height: 200px;
     object-fit: cover;
     border-radius: 15px;
-    margin-bottom: 20px;
 }
 
 .project-card p {
@@ -325,8 +326,8 @@ section {
     }
 
     .hero-image img {
-        width: 150px;
-        height: 190px;
+        width: 100px;
+        height: 150px;
     }
 
     .about-card,
